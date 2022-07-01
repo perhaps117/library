@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 确定版心 ，后面需要可以直接调用*/
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+
+/* 清除父盒子浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    /* IE6、7专有 */
+    *zoom: 1;
+}
+
+/* 清除列表格式 */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 42px;
+    /* background-color: rgb(244, 245, 249); */
+    /* 由于与上面的.w冲突，需要单独指定上下边距 */
+    margin: 10px auto;
+}
+
+.logo {
+    float: left;
+    width: 178px;
+    height: 42px;
+    /* background-color: purple; */
+}
+
+.nav {
+    float: left;
+    margin-left: 30px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 8px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 6px;
+    line-height: 42px;
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid rgb(0, 154, 251);
+}
+
+.search {
+    float: left;
+    width: 340px; 
+    height: 42px;
+    background-color: transparent;
+    margin-left: 120px;
+}
+.search input {
+    float: left;
+    width: 260px;
+    height: 34px;
+    border: 1.5px solid rgb(0, 154, 251);
+    margin: 2.5px 0;
+    border-right: 0;
+    color: #505050;
+    font-size: 13px;
+    padding-right: 10px;
+}
+.search button {
+    float: left;
+    width: 44px;
+    height: 37px;
+    background-color: blue;
+    border: 0;
+    margin: 2.5px 0;
+    background: url(../images/searchbutton.jpg) no-repeat -3px -2px
+}
+.user {
+    float: left;
+    line-height: 37px;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* banner开始 */
+.banner {
+    height: 320px;
+    /* background-color: rgb(38, 0, 133); */
+}
+.banner .w {
+    height: 320px;
+    background: url(../images/bannerwall1.jpg) no-repeat top center;
+    background-size: 606px;
+}
+.subnav {
+    float: left;
+    height: 320px;
+    width: 182px;
+    background-color: #0000009f;
+}
+.subnav ul li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 18px;
+}
+.subnav ul li a {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover{
+    color: rgb(0, 154, 251);
+}
+.course {
+    float: right;
+    width: 180px;
+    height: 231px;
+    background-color: #fff;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+.course h2 {
+    height: 40px;
+    background-color: rgb(155, 206, 235);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.bd {
+    padding: 0 16px;
+
+}
+.bd ul li {
+    padding: 8px 0;
+    border-bottom: 1px  solid #ccccccb3;
+}
+.bd ul li h4 {
+    font-size: 14px;
+    color: #232323;
+    font-weight: 400;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #6f6f6f;
+}
+.bd .more {
+    display: block;
+    height: 28px;
+    border: 1.5px solid #00a4ff;
+    text-align: center;
+    line-height: 28px;
+    color: #00a4ff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2px 0;
+}
+.goods {
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 1px #c1c1c1;
+    margin-top: 8px;
+    line-height: 50px;
+}
+.goods h3 {
+    float: left;
+    margin:0 30px;
+    font-size: 15px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+.goods ul {
+    float: left;
+}
+.mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 15px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a {
+    padding: 0 26px;
+    border-left: 1px  solid #ccccccb3;
+    font-size: 13px;
+    color: #2a2a2a;
+}
+.box {
+    margin-top: 26px;
+}
+.box-hd {
+    height: 26px;
+}
+.box-hd h3 {
+    float: left;
+    font-weight: 400;
+    color: #4e4e4e;
+    font-size: 17px;
+}
+.box-hd a {
+    float: right;
+    font-size: 14px;
+    color: #6a6a6ad0;
+    margin-top: 9px;
+    margin-right: 26px;
+}
+.box-bd ul {
+    width: 1100px;
+    margin-top: 10px;
+}
+/* 把li 的父亲ul 修改的足够宽，一行能放下五个即可 */
+.box-bd ul li {
+    position: relative;
+    float: left;
+    width: 192px;
+    height: 230px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.box-bd ul li img {
+    width: 100%;
+}
+.box-bd ul li h4 {
+    margin: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.box-bd ul li em {
+    position: absolute;
+    right: -6.5px;
+    top: 10px;
+    font-size: 12px;
+    font-style: normal;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    line-height: 19px;
+    color: rgb(255, 89, 45);
+    background: url(../images/hot.png) no-repeat;
+    background-size: 91%;
+}
+.box-bd .info {
+    margin: 16px 15px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd .info span {
+    color: orange;
+}
+.footer {
+    height: 185px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    overflow: hidden;
+}
+.footer .w {
+    /* 此处用margin-top会导致父元素塌陷 */
+    margin-top: 30px;
+
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1.5px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    line-height: 33px;
+    text-align: center;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 90px;
+}
+.links dt {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    margin-bottom: 10px;
+}
+.links dd a {
+    font-size: 13px;
+    color: rgb(27, 27, 27);
+}
